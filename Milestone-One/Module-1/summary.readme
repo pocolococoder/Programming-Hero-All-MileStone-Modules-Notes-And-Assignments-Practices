@@ -1,0 +1,187 @@
+🌐 HTML (Hyper Text Markup Language) – Complete Note
+🔹 What is HTML?
+
+H → Hyper (Reference / Link)
+T → Text (Data / Info)
+M → Markup (Predefined / Marked Structure)
+L → Language (Communication tool for browser)
+
+👉 Definition:
+HTML হলো একটি markup language যেটা ওয়েবপেজকে গঠন (structure) দেয়।
+
+🔹 HTML Elements & Tags
+
+✔️ All HTML Tags = Elements
+
+<p> → Paragraph
+
+<b> → Bold (Non-semantic)
+
+<strong> → Bold + Important (Semantic ✅)
+
+<i> → Italic (Non-semantic)
+
+<em> → Emphasis, extra focus (Semantic ✅)
+
+<span> → Specific inline styling/content
+
+<small> → ছোট, হালকা টেক্সট
+
+🔹 Headings
+
+👉 <h1> to <h6> → বড় থেকে ছোট heading
+
+<h1>Main Title</h1>
+<h2>Sub Title</h2>
+<h3>Section Title</h3>
+
+🔹 Block vs Inline Elements
+
+Block Tags → p, h1-h6, div
+
+Inline Tags → strong, em, i, small, span
+
+💡 Example:
+
+<p>This is a paragraph (Block)</p>
+<span>This is span (Inline)</span>
+
+❓ Q1: Example of Block and Inline tag?
+
+✅ Answer:
+
+Block → <div>, <p>, <h1>
+
+Inline → <span>, <strong>, <em>
+
+❓ Q2: What is Semantic Tag? Why used?
+
+✅ Answer:
+
+Semantic tags are meaningful tags → যেমন <header>, <footer>, <article>, <section>, <strong>, <em>
+
+These tell browser & search engines what content means (SEO + Accessibility)।
+
+🔹 HTML Lists
+1️⃣ Unordered List (ul)
+<ul type="disc">
+  <li>Biryani</li>
+  <li>Borhani</li>
+  <li>Kala Bhuna</li>
+  <li>Salt-Lemon</li>
+</ul>
+
+
+Types → disc, circle, square, none
+
+2️⃣ Ordered List (ol)
+<ol>
+  <li>Liton</li>
+  <li>Taskin</li>
+  <li>Shanto</li>
+  <li>Tamim</li>
+</ol>
+
+3️⃣ Description List (dl)
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language, the structure of the web.</dd>
+</dl>
+
+🔹 Important HTML Tags
+
+<div> → Division/Container
+
+<br> → Line Break
+
+<button> → Clickable Button
+
+🔹 Anchor Tag <a>
+<a href="https://www.google.com" target="_blank">Google</a>
+
+
+👉 Parts:
+
+<a> → Start Tag
+
+href → Attribute Name
+
+"https://..." → Attribute Value
+
+Google → Affected Content
+
+</a> → End Tag
+
+Extra → target, download attribute
+
+🔹 Image Tag <img>
+<img src="img.jpg" alt="Description of image">
+
+
+Self-closing / void tag
+
+alt → accessibility (if image not load)
+
+Internal vs External images
+
+🔹 Input Tag
+<input type="text">
+<input type="email">
+<input type="password">
+<input type="date">
+<input type="file">
+<input type="submit">
+
+❓ Q3: What are different types of input in HTML?
+
+✅ Answer:
+
+text, email, password, number, date, file, checkbox, radio, submit, button, color, range, url, tel ইত্যাদি।
+
+🔹 HTML Structure
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <h1>Hello HTML</h1>
+    <p>This is my first website</p>
+  </body>
+</html>
+
+🔹 Common Sections in HTML5
+
+<header> → Top section
+
+<nav> → Navigation
+
+<main> → Main content
+
+<article> → Article content
+
+<section> → Grouped content
+
+<footer> → Copyright / Contact
+
+🔹 Extra Notes
+
+! + Shift → Auto HTML boilerplate (Emmet shortcut)
+
+Favicon → website icon (in browser tab)
+
+Comments in HTML:
+
+<!-- This is a comment, not visible in UI -->
+
+🟢 Summary
+
+✅ HTML → Structure of webpage
+✅ Tags = Elements
+✅ Inline vs Block → Layout difference
+✅ Semantic tags → Meaningful, SEO friendly
+✅ Lists → ul, ol, dl
+✅ Form Inputs → বিভিন্ন ধরণের data collect করার জন্য
+✅ Boilerplate → doctype + html + head + body

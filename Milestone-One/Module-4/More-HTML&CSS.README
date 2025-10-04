@@ -1,0 +1,305 @@
+1. HTML vs HTML5
+
+HTML (older versions): প্রাথমিকভাবে ওয়েবপেজের স্ট্রাকচার তৈরি করে।
+
+HTML5 (standard since 2014): HTML-এর নতুন ও পূর্ণাঙ্গ ভার্সন — semantic tags, multimedia support (audio, video), canvas, localStorage, geolocation, এবং অনেক নতুন API যোগ করা হয়েছে।
+
+Structure difference (উদাহরণ)
+
+HTML4 (non-semantic style)
+
+<div id="header"></div>
+<div id="menu"></div>
+<div id="content"></div>
+<div id="footer"></div>
+
+HTML5 (semantic)
+
+<header></header>
+<nav></nav>
+<main></main>
+<section></section>
+<article></article>
+<footer></footer>
+2. Semantic vs Non-Semantic HTML
+
+Non-semantic: <div>, <span> — কেবল structure, ট্যাগের নাম দেখে কনটেন্টের অর্থ বোঝা যায় না।
+
+Semantic: <header>, <nav>, <article>, <section>, <footer>, <aside>, <figure>, <figcaption> — ট্যাগগুলো নিজেই কনটেন্টের অর্থ জানায়।
+
+কেন Semantic tags ব্যবহার করবেন?
+
+SEO (search engines) সহজে কনটেন্ট বুঝতে পারে।
+
+Accessibility (screen readers) ভালোভাবে কাজ করে।
+
+কোড পড়ে সহজে বোঝা যায় — maintenance সহজ হয়।
+
+Browser & tools semantic structure থেকে আরও ভাল ফল দেয় (e.g., automated testing, content extraction)।
+
+3. HTML Release Timeline (Corrected)
+
+HTML 1.0 — 1993
+
+HTML 2.0 — 1995
+
+HTML 3.2 — 1997
+
+HTML 4.01 — 1999 (Recommendation published 1999)
+
+XHTML 1.0 — 2000 (XML-based)
+
+HTML5 — 2014 (W3C Recommendation October 28, 2014)
+
+নোট: উপরের বছরগুলো ইতিহাসগতভাবে স্থির — এগুলো ভুল হওয়ার সম্ভাবনা খুব কম।
+
+4. Multimedia Tags
+
+Audio
+
+<audio controls src="/music.mp3">Your browser does not support the audio element.</audio>
+
+Video
+
+<video controls width="640" height="360">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Iframe (e.g., YouTube)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+5. Common Semantic HTML Elements (short list)
+
+<header> — page or section header
+
+<nav> — navigation links
+
+<main> — main page content
+
+<section> — thematic grouping
+
+<article> — independent content (blog post, news)
+
+<aside> — sidebar content
+
+<footer> — footer info
+
+<figure> + <figcaption> — image + caption
+
+6. HTML Forms (full explanation + examples)
+
+Form basics
+
+<form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+
+  <fieldset>
+    <legend>Contact preferences</legend>
+    <label><input type="radio" name="contact" value="email"> Email</label>
+    <label><input type="radio" name="contact" value="phone"> Phone</label>
+  </fieldset>
+
+
+  <label for="bio">Bio</label>
+  <textarea id="bio" name="bio"></textarea>
+
+
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</form>
+
+Key attributes explained
+
+action — ফর্মটি সাবমিট হলে ডাটা কোথায় যাবে (URL)।
+
+method — GET (URL এ পাঠানো) বা POST (body তে পাঠানো)।
+
+label for="id" — accessibility জন্য label element ব্যবহার করা হয়; for attribute ইনপুটের id এর সাথে লিঙ্ক করে।
+
+fieldset + legend — logically related fields গ্রুপ করতে ব্যবহার হয়।
+
+required — ব্রাউজার-লেভেলে validation দেয়।
+
+Common input types text, email, password, number, tel, url, date, datetime-local, file, checkbox, radio, submit, reset, button, color, range.
+
+7. HTML Tables (structure and example)
+
+Tags
+
+<table> — table container
+
+<caption> — table title/caption
+
+<thead> — table head (header rows)
+
+<tbody> — table body (data rows)
+
+<tfoot> — table footer (summary rows)
+
+<tr> — table row
+
+<th> — table header cell
+
+<td> — table data cell
+
+Example
+
+<table>
+  <caption>Student Scores</caption>
+  <thead>
+    <tr><th>Name</th><th>Math</th><th>Science</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Rafi</td><td>85</td><td>90</td></tr>
+    <tr><td>Sumi</td><td>88</td><td>92</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="3">End of table</td></tr>
+  </tfoot>
+</table>
+8. CSS Flexbox — Overview + Usecases + Examples
+
+Flexbox কেন?
+
+Responsive layouts সহজে তৈরী করতে সাহায্য করে।
+
+Centering, spacing, alignment সহজ করে।
+
+One-dimensional layout (row বা column)।
+
+Basic properties
+
+.container {
+  display: flex;
+  flex-direction: row; /* row | column */
+  justify-content: center; /* main axis alignment */
+  align-items: center; /* cross axis alignment */
+  gap: 16px; /* space between items */
+}
+.item {
+  flex: 1 1 200px; /* grow shrink basis */
+}
+
+Usecases
+
+Navbar alignment (menu items horizontally)
+
+Card/grid row that needs equal height cards
+
+Vertical/horizontal centering of a banner
+
+9. Centering with Flex & Margin
+
+Horizontal & Vertical Centering (Full-screen)
+
+<div class="wrap">
+  <div class="box">Centered box</div>
+</div>
+.wrap {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;
+}
+.box { width: 300px; }
+
+Horizontal centering with margin
+
+.box { width: 400px; margin: 0 auto; }
+10. Navigation — Simple Navbar & Internal Navigation
+
+Simple Navbar (flex)
+
+<nav>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+.nav { display:flex; gap: 20px; list-style: none; }
+.nav a { text-decoration: none; }
+
+Internal navigation among files
+
+Use relative links: href="about.html" or href="./pages/about.html" depending on folder structure.
+
+11. Banner with Flexbox (Example)
+<header class="banner">
+  <div class="banner-text">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Front-end Developer • HTML • CSS • JS</p>
+    <a class="btn" href="projects.html">See Projects</a>
+  </div>
+  <div class="banner-img">
+    <img src="profile.png" alt="Profile" />
+  </div>
+</header>
+.banner { display:flex; align-items:center; justify-content:space-between; padding: 40px; }
+.banner-img img { max-width: 320px; height: auto; }
+12. Cards Section — Create & Style
+<section class="cards">
+  <article class="card">
+    <h3>Project A</h3>
+    <p>Short description</p>
+  </article>
+  <article class="card">
+    <h3>Project B</h3>
+    <p>Short description</p>
+  </article>
+  <article class="card">
+    <h3>Project C</h3>
+    <p>Short description</p>
+  </article>
+</section>
+.cards { display:flex; gap:20px; flex-wrap:wrap; }
+.card { flex: 1 1 280px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+13. Interview-level Q&A (Short & Precise Answers)
+
+Q1: HTML ও HTML5 এর মধ্যে প্রধান পার্থক্য কী? A: HTML5-এর মধ্যে semantic tags, multimedia (audio/video), APIs (canvas, localStorage, geolocation) এবং improved parsing rules রয়েছে — ফলে modern web app তৈরি করা সহজ।
+
+Q2: Semantic HTML কেন গুরুত্বপূর্ণ? A: SEO, accessibility, maintenance এবং automated tools/engines ভালোভাবে content বুঝতে পারে — ফলে semantic ব্যবহার করা উচিত।
+
+Q3: Flexbox কখন ব্যবহার করবেন? A: যখন layout এক-ডাইমেনশনাল (row/column) হয় এবং item alignment/spacing/centering সহজে করতে চান।
+
+Q4: HTML ফর্মে action এবং method কী করে? A: action — সাবমিশনের URL, method — ডাটা কিভাবে পাঠানো হবে (GET or POST)।
+
+Q5: Table এর প্রধান অংশগুলো কী কী? A: <thead>, <tbody>, <tfoot>, <tr>, <th>, <td>, <caption>।
+
+Q6: Block vs Inline vs Inline-block পার্থক্য? A: Block নতুন লাইন নেয় (width 100%), inline সরাসরি কনটেন্ট অনুযায়ী জায়গা নেয়, inline-block inline-এর মতো থাকে কিন্তু width/height set করা যায়।
+
+Q7: কিভাবে horizontally এবং vertically center করবেন? A: Flexbox ব্যবহার করে justify-content: center; align-items: center; অথবা single element horizontal center হলে margin: 0 auto; ব্যবহার করুন।
+
+14. Common Mistakes & Best Practices
+
+Mistake: সব কিছু <div> দিয়ে করা — use semantic tags instead.
+
+Mistake: Inline styles বেশি ব্যবহার করা — prefer external CSS.
+
+Mistake: Missing alt attribute on images — accessibility problem.
+
+Best practice: Mobile-first responsive design, use meta viewport in head.
+
+Best practice: Use rel="noopener" with target="_blank" for security.
+
+15. Quick Cheatsheet (Commands & Short Notes)
+
+HTML5 boilerplate: ! (Emmet in VS Code) → expands to full structure.
+
+Meta viewport: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Center full screen: display:flex; justify-content:center; align-items:center; height:100vh;
+
+Responsive image: img { max-width:100%; height:auto; }
+
+16. Final Tips & Next Steps
+
+Practice: small projects — navbar, banner, cards, form, contact page.
+
+Revision: review notes weekly and search Google for specific issues.
+
+Interview prep: learn to explain box model, flexbox properties, form handling, semantic vs non-semantic difference.

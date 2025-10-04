@@ -1,0 +1,43 @@
+
+.header{
+    height: 300px;
+    background-color: bisque;
+    background-image: url(/css\ box\ model_2\ \(1\).webp);
+    background-repeat:repeat-x;
+    background-size:auto;
+}
+
+
+
+.blog{
+            background-color: aquamarine;
+            border: 2px solid rgb(226, 68, 0);
+            border-radius: 10px;
+            margin: 10px;
+            padding:10px 20px;
+            box-shadow: 2px 2px 2px 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+    .head{
+    text-decoration: overline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }            
+
+
+    .incident{
+        border: 2px solid purple;
+        display:inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    li{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+    }
+/* .second{
+    visibility: hidden;
+} */

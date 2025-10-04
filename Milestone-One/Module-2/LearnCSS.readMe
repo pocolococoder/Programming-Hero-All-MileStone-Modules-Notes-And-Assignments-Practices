@@ -1,0 +1,230 @@
+🎨 CSS (Cascading Style Sheets) – Complete Note
+🔹 CSS Introduction
+
+👉 Cascading মানে হলো ঝর্ণার মতো উপরে থেকে নিচে নেমে আসা।
+CSS ব্যবহার হয় HTML elements কে সুন্দরভাবে সাজাতে (style করতে)।
+
+p {
+  color: red;
+}
+
+
+p → Selector
+
+color → Property
+
+red → Value
+
+🔹 Types of CSS
+
+1️⃣ Inline CSS
+
+<h1 style="color: blue;">This is heading</h1>
+
+
+2️⃣ Internal CSS
+
+<head>
+  <style>
+    p { color: green; }
+  </style>
+</head>
+
+
+3️⃣ External CSS
+
+<link rel="stylesheet" href="style.css">
+
+🔹 CSS Colors
+
+Color names → red, blue, green
+
+RGB → rgb(255,0,0)
+
+RGBA → rgba(255,0,0,0.5) (opacity সহ)
+
+HSL/HSLA → Hue, Saturation, Lightness
+
+🔹 CSS Units
+
+px → fixed pixel size
+
+em → parent element এর উপর নির্ভরশীল
+
+rem → root element এর উপর নির্ভরশীল
+
+vw / vh → viewport width & height percentage
+
+🔹 Text Styling
+p {
+  color: red;
+  text-align: center; /* left, right */
+  text-decoration: none; /* underline, overline */
+  font-size: 16px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+🔹 CSS Selectors
+
+ID Selector (#) → Unique element এর জন্য
+
+#title { color: blue; }
+
+
+Class Selector (.) → একাধিক element এর জন্য
+
+.heading { color: green; }
+
+
+Element Selector
+
+p { color: red; }
+
+
+Universal Selector (*)
+
+* { margin: 0; padding: 0; }
+
+
+Grouping Selector
+
+h1, p { color: red; }
+
+
+Attribute Selector
+
+input[type="submit"] {
+  background: red;
+  color: white;
+}
+
+🔹 Borders
+div {
+  border: 2px solid rgb(226, 68, 0); /* solid, dotted, dashed, none */
+  border-radius: 10px; /* curve */
+}
+
+🔹 Margin vs Padding
+
+Margin → Element এর বাইরের ফাঁকা জায়গা
+
+Padding → Content আর Border এর মধ্যকার ফাঁকা জায়গা
+
+👉 Margin & Padding shorthand:
+
+4 values → margin: top right bottom left;
+
+3 values → margin: top left-right bottom;
+
+2 values → margin: top-bottom left-right;
+
+1 value → margin: all sides;
+
+🔹 Box Model
+
+CSS Box Model = Content → Padding → Border → Margin
+
+div {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+🔹 Display Property
+
+none → Hide element
+
+block → New line এ শুরু হবে (p, div, h1)
+
+inline → এক লাইনে (span, a, strong)
+
+inline-block → এক লাইনে কিন্তু height & width apply করা যায়
+
+🔹 Background
+div {
+  background-color: lightblue;
+  background-image: url("image.jpg");
+  background-repeat: no-repeat; /* repeat, repeat-x */
+  background-size: cover; /* contain */
+  background-position: center; /* top, left, right */
+}
+
+🔹 Height & Width
+div {
+  height: 200px;
+  width: 300px;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+🔹 Shadows
+div {
+  box-shadow: 5px 5px 10px gray;
+}
+
+❓ QnA Section
+Q1️⃣ → What’s the difference between ID vs Class?
+
+✅ Answer:
+
+ID (#id) → Unique element এর জন্য (একটা page এ একবারই ব্যবহার করা যায়)।
+
+Class (.class) → Multiple elements এর জন্য ব্যবহার করা যায়।
+
+Q2️⃣ → What is Margin and Padding?
+
+✅ Answer:
+
+Margin → Element এর বাইরের spacing
+
+Padding → Element এর ভেতরের content আর border এর মধ্যে spacing
+
+Q3️⃣ → What is max-height / min-height?
+
+✅ Answer:
+
+max-height → Element এর সর্বোচ্চ height
+
+min-height → Element এর ন্যূনতম height
+
+Q4️⃣ → What is max-width / min-width?
+
+✅ Answer:
+
+max-width → সর্বোচ্চ width limit
+
+min-width → ন্যূনতম width limit
+
+Q5️⃣ → What is border-radius?
+
+✅ Answer:
+
+border-radius property দিয়ে border এর কোণা curve (rounded corners) বানানো হয়।
+
+Q6️⃣ → What is CSS Box Model?
+
+✅ Answer:
+Box Model = Content → Padding → Border → Margin
+এটা CSS layout এর মূল concept।
+
+Q7️⃣ → What is Inline, Inline-block, Block?
+
+✅ Answer:
+
+Inline → এক লাইনে থাকে (span, strong, a)। Width/Height change করা যায় না।
+
+Block → আলাদা লাইনে শুরু হয় (div, p, h1)। পুরো width নেয়।
+
+Inline-block → এক লাইনে থাকে কিন্তু width/height দেওয়া যায়।
+
+🟢 Summary
+
+✅ CSS = Style language for HTML
+✅ Types → Inline, Internal, External
+✅ Selectors → ID, Class, Element, Universal, Attribute
+✅ Units → px, em, rem, vw, vh
+✅ Box Model → Margin, Border, Padding, Content
+✅ Display → inline, block, inline-block
+✅ Background, Borders, Shadows → Decoration

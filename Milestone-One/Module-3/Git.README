@@ -1,0 +1,172 @@
+🎯 Git & GitHub Complete Notes
+🌍 What is Version Control System (VCS)?
+
+🔹 A Version Control System হলো এমন এক ধরনের ডাটাবেস যা আপনার প্রজেক্ট ফাইলের প্রতিটি পরিবর্তনের (Change) ইতিহাস সংরক্ষণ করে।
+এতে জানা যায়—
+
+কে পরিবর্তন করেছে?
+
+কখন করেছে?
+
+কেন করেছে?
+
+❓ Why Version Control is Needed?
+
+✅ Collaboration → একসাথে একাধিক ডেভেলপার কাজ করতে পারে।
+✅ Storing Versions → প্রতিটি পরিবর্তনের স্ন্যাপশট থাকে।
+✅ Restoring Previous Versions → পুরোনো অবস্থায় ফিরে যাওয়া যায়।
+✅ Backup → যদি কিছু নষ্ট হয়ে যায়, সেভ করা থাকে।
+
+👉 সংক্ষেপে: Code manage, store, share, track.
+
+🛠️ Types of Version Control System
+
+Local VCS → শুধু লোকাল কম্পিউটারে কাজ করে (e.g. RCS)।
+
+Centralized VCS (CVCS) → একটাই সার্ভারে সবকিছু থাকে (e.g. SVN, CVS)।
+
+Distributed VCS (DVCS) → প্রতিটি ডেভেলপারের কাছে পুরো কপির হিস্ট্রি থাকে। (e.g. Git, Mercurial) ✅
+
+🐙 What is Git?
+
+🔹 Git হলো একটি ওপেন-সোর্স Distributed Version Control System (DVCS)।
+🔹 এটি 2005 সালে Linus Torvalds তৈরি করেন (Linux এর জনক)।
+🔹 প্রতিটি ডেভেলপারের কাছে পুরো প্রজেক্টের কপি থাকে।
+
+⚡ How Git Works?
+
+Working Directory → যেখানে আপনি কোড লিখছেন।
+
+Staging Area (Index) → যেখানে পরিবর্তিত ফাইলগুলো প্রস্তুত রাখা হয়।
+
+Repository (Local Repo) → git commit করলে পরিবর্তন লোকালি সেভ হয়।
+
+Remote Repository (GitHub, GitLab) → কোড শেয়ার করার জন্য রিমোট সার্ভারে পাঠানো হয়।
+
+👉 সহজভাবে:
+Working Directory → Staging → Local Repo → Remote Repo
+
+🆚 Git vs GitHub
+
+Git → একটি টুল / সফটওয়্যার (DVCS)।
+
+GitHub → Git ব্যবহার করে কোড হোস্ট করার Online Platform।
+
+📌 উদাহরণ:
+Git = Mobile Camera 📷
+GitHub = Facebook যেখানে ছবি আপলোড করবেন 🌐
+
+💻 Git Installation & Setup
+
+টার্মিনালে চেক করুন:
+
+git --version
+
+
+প্রথমবার কনফিগার:
+
+git config --global user.email "your@example.com"
+git config --global user.name "Your Name"
+
+📂 Create New Repository on GitHub
+
+GitHub এ যান → New Repository
+
+নাম দিন (যেমন: my-project)
+
+Public/Private বেছে নিন
+
+চাইলে → Add README ✅
+
+📝 Git Basic Commands
+প্রথমবার নতুন প্রজেক্ট Push করার জন্য:
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/user/repo.git
+git push -u origin main
+
+Existing Repo এ নতুন Push করার জন্য:
+git add .
+git commit -m "second commit"
+git push
+
+⚠️ Common GitHub Problems (Beginners)
+
+ভুল ফোল্ডারে আছেন (always check pwd)।
+
+git init না করে add/commit করলে error হবে।
+
+Remote ঠিকমতো add না করলে push হবে না।
+
+Branch mismatch (master vs main)।
+
+Permission denied → SSH Key problem।
+
+Merge conflict হলে সমাধান করতে হয়।
+
+Cache problem → .gitignore ফাইল না থাকলে।
+
+git add . না করলে commit এ ফাইল যাবে না।
+
+Internet connectivity issue।
+
+Large file push করলে Git LFS দরকার।
+
+🔄 Git Basic Workflow
+
+Change file →
+
+git add → (staging এ যাবে)
+
+git commit → (local repo তে যাবে)
+
+git push → (remote repo তে যাবে)
+
+👨‍💻 Multiple Developer Workflow
+
+সবাই একটি repo clone করবে →
+
+git clone https://github.com/user/repo.git
+
+
+প্রত্যেকে আলাদা branch এ কাজ করবে।
+
+Pull request (PR) দিয়ে main এ merge করবে।
+
+Code review → Merge → Final version update।
+
+🌿 Advanced Topics
+
+Branch → আলাদা feature/test করার জন্য।
+
+Merge → একাধিক branch একত্রিত করা।
+
+Pull Request → অন্য ডেভেলপারের কোড main repo তে আনার request।
+
+Fork → কারও repo কপি করে নিজের একাউন্টে আনা।
+
+Clone → লোকালি repo ডাউনলোড করা।
+
+Rebase → history linear করার জন্য।
+
+🎯 Git/GitHub Interview Questions (with Answers)
+
+What is Git?
+→ A DVCS used to track code changes and collaboration.
+
+Git vs GitHub?
+→ Git = Tool, GitHub = Hosting service for Git repos.
+
+Explain Git workflow.
+→ Working dir → Staging → Local repo → Remote repo.
+
+What is branching?
+→ Creating a separate line of development.
+
+What is merge conflict?
+→ When two branches change the same file in different ways.
+
+How to resolve merge conflict?
+→ Manually edit conflicting files → git add → git commit.
