@@ -1,0 +1,37 @@
+==> 11-1 what is Component Based Design vs Utility based Design? Explain Porperly
+
+--block based design Explain (BEM or component based)
+--BEM- Block element modifier- Pros and Cons Explained Porperly
+
+-- What is Utility based design?
+
+-- Components VS utilitiy base design
+
+-- Why framework or tailwind?
+ faster development-
+-consistent styling
+-reduces css bloat-
+-responsive () mobile first
+- No context between HTML and CSS
+
+
+==> 11-2 Getting Started with Tailwind [ What , Why , How ] and Extension setup-
+
+Ekjon developer k sob kichu shikhte hoy. need purpose e-
+
+==> 11-3 Tailwind Typography, background, text and border
+
+==> 11-4 Tailwind Spacing, Box model Properties
+
+==> 11-5 Tailwind Flex layout and responsive flex
+
+==> 11-6 Explore Grid layout and responsive grid
+
+==> 11-7 Make Simple Card format using tailwind
+
+==> 11-8 Explore Card and responsive card using Tailwind
+
+==> 
+
+
+

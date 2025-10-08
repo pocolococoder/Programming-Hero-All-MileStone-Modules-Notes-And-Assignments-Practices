@@ -1,0 +1,377 @@
+
+
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.max-width{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-top: 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.color-nav{
+    font-weight: 700;
+    color: black;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.color-h1{
+    color: #E95A08;
+    font-weight:700;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-weight:700;
+}
+
+.our-plants{
+    margin-top: 65px;
+    text-align: center;
+}
+
+.our-plants h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.plants-orange{
+    color: #E95A08;
+}
+
+.our-plants p{
+    color: gray;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding: 5px;
+}
+
+.card{
+    padding: 5px;
+}
+
+.card img{
+    width: 170px;
+}
+
+.card h5{
+    font-size: 1rem;
+}
+
+.card button{
+    width:100%;
+    padding: 10px;
+    font-weight: 700;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+}
+
+.plants-lover{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.plants-lover img{
+    width: 350px;
+}
+
+.plants-lover li{
+    font-size: 1rem;
+}
+
+/* Section Styling */
+.deals-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.deal-content{
+    text-align: center;
+}
+
+.deals-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.deals-section .highlight {
+  color: #ff6600;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+}
+
+.left-cards {
+  display: flex;
+  flex-direction: column;
+    gap:20px;
+}
+
+/* Card Style */
+.deal-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.deal-card.large {
+  height: 420px;
+}
+
+.deal-card:hover {
+  transform: scale(1.02);
+}
+
+/* Overlay Gradient */
+.deal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+}
+
+/* Card Content */
+.deal-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.deal-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.deal-content button {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.deal-content button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.newsletter{
+    margin-top: 65px;
+}
+
+.news-card{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-content{
+    text-align: center;
+}
+.news-content h1{
+    color: white;
+}
+
+.news-content .email{
+    width: 150px;
+    padding: 5px;
+}
+
+.submit{
+    padding: 5px;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+    font-weight: 700;
+
+}
+
+.footer-container{
+
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.f-div{
+    display: flex;
+    flex-direction: column;
+}
+.f-div a{
+    text-decoration: none;
+    color: gray;
+}
+
+.f-image{
+    display: flex;
+    margin-top: 0;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.f-image img{
+    width: 20px;
+}
+
+
+/* Media Query-  */
+
+@media screen and (max-width: 576px){
+    .hidden{
+        display: none;
+    }
+
+    .navbar{
+        padding: 10px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        text-align: center;
+    }
+
+    .banner img{
+        width: 300px;
+    }
+
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .banner p{
+        padding: 20px;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+        object-fit: cover;
+    }
+    .card img{
+        width: 140px;
+    }
+
+    .our-plants h2{
+        font-size: 2rem;
+    }
+    .our-plants p{
+        font-size: 0.9rem;
+        line-break:strict;
+        padding: 25pxpx;
+    }
+
+    .plants-lover{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .plants-lover img{
+        width: 200px;
+    }
+
+    .plants-lover li{
+        font-size: 0.6rem;
+    }
+
+    .deals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deal-card.large {
+    height: 280px;
+  }
+
+  .deal-card.small {
+    height: 180px;
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+  }
+}

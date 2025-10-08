@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+        .box{
+            width: 400px;
+            border: 2px solid steelblue;
+            height: 250px;
+        }
+        #box-1{
+            overflow: scroll;
+        }
+
+        .elipsis{
+            width: 200px;
+            border: 2px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: ellipsis; */
+            text-overflow: clip;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="elipsis">
+            I ma serious learner. I am investing at least 6-8 hours every single day. No gap at all.
+        </p>
+    </header>
+    <section>
+        <div id="box-1" class="box">
+            <h3>My Text Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore aut voluptatibus, modi, ipsum eveniet perspiciatis distinctio rerum nesciunt commodi, qui alias blanditiis numquam error facere laborum facilis vitae. Vero, cum hic quaerat, vel cupiditate a explicabo doloremque suscipit temporibus, quae modi? Ratione asperiores id rem doloribus laudantium minus corrupti iste delectus quam eius atque maxime numquam doloremque facere amet voluptate dolorem minima nemo, nostrum aperiam hic totam consequuntur! Sed sequi officiis consequuntur perspiciatis saepe molestias ut. Vel pariatur debitis rerum quisquam nobis eligendi quaerat temporibus eius impedit. Ipsa dignissimos nesciunt esse fugit assumenda cum recusandae repellat odit? Nobis, hic!</p>
+        </div>
+        <div class="box">
+            <h3>My Text Box 2</h3>
+            <p>Modi, doloremque sit libero consequatur corrupti velit, in tenetur nam deleniti inventore, fugit ratione eos. Porro aut inventore nisi delectus facilis numquam tempora, molestias expedita maxime fuga qui tempore at suscipit quia est, quam ex? Recusandae placeat porro commodi aliquam totam quaerat sunt quos a numquam ipsam! Similique quia ullam commodi quod excepturi quos dignissimos quis optio velit possimus, illo asperiores maxime praesentium sint soluta minima, distinctio cupiditate est sed. Quasi facere, maiores sequi id consequatur delectus tenetur. Voluptatibus beatae, aperiam provident deserunt autem ducimus, minima dolores saepe aspernatur architecto fugiat. Impedit reiciendis amet error necessitatibus ipsum laboriosam tenetur aperiam!</p>
+        </div>
+    </section>
+</body>
+</html>
