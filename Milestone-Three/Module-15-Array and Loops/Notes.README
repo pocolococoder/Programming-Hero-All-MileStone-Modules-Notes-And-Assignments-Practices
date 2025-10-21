@@ -1,0 +1,63 @@
+                    Array--
+
+Explain these properly with no mistake for my interview short notes-
+
+==> What is Array and conecpts of Array with example and why is needed? --
+
+Enables storing a collection of multiple items under s single variable name
+
+==> Store more than one value in a variable using Array
+
+==> Explain how to change value with array index with example
+==> Explain  Array length, index, Get and set by index with example
+
+==> Explain Add/remove elements from arrays using push, pop shift & unshift with example
+
+==> Explain All about basic array methods, isArray
+
+==> Explain includes(num/str/bool/anything), indexOf(),isArray(),join(join-str return),concat(array-return),slice(neArray-return),splice().
+
+
+                Fundamental concepts of Loops
+
+==> What is a Loop and its usecase in Js with example? i mean why need loop?
+
+
+--Array-> For-of loop
+
+==> Explain While Loop and when we use for loop and when while loop? and how do we know which methods shuold be using?
+
+let number = 0;
+while(number<5){
+    console.log("looping",number)
+    number= number + 1;
+}
+
+let num = 1; //loop variable
+while(num<=10){ //loop condition
+    if(num%2==0){
+        console.log("even num",num) //loop statement
+    }
+    num++; //loop variable change
+}
+
+
+==>  Problem solving with While Loop- loop task-array task- js loop task
+
+==> Normal For loop explained-
+
+for(let num = 0;num<=5;num++){
+    console.log(num)
+}
+
+==>  Problem solving with For Loop
+
+==>  Different ways to use loop with example
+
+==>  When to use a break and continue
+
+==> Explain and usecase Do While Loop
+
+==> Difference between types of loops
+
+==> 

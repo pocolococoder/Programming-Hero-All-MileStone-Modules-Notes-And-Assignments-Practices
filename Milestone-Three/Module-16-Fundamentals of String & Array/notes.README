@@ -1,0 +1,22 @@
+==> Explain string and string vs array
+string- immuitable(Unchangeable)
+array- mutable(Changeable)
+
+==> String comparison, Uppercase , lowercase and trim(fast and last space removing) explain with example
+
+==> String Slice(),split(" "), Join, Concat and includes() with example
+
+==>  Reverse a String in Three different ways
+
+==> Objects properties(keys) and values explain with example
+
+==> primitive vs non primitive
+
+==> Multiple ways to get & set object properties
+
+==> Dot notation, bracket notation,
+
+==> Keys, Values, nested objects and delete ---> object.keys(),object.values(),delete
+
+
+** all practice must- and assignment

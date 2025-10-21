@@ -1,0 +1,79 @@
+Explain these all properly-->
+
+==> What is JavaScript?- how works hight level language like Js?
+
+==> How this run? and function?
+
+==> Intro to JavaScript , how to run JavaScript in VS Code
+
+==> JS Founder and JS building story- Buildin just 10 days story
+
+==> HTML,CSS And JS - Three pillars of Website
+
+==> What is WWW and how www or internet works?
+
+==> Before Js , how to look like websites?
+
+==> Benefits of Js or Why we use js?
+
+==> How does JavaScript run on a browser?
+
+==> how Maths Needed to start learning Programming Language?
+
+==>  What is a variable, five things you need to declare a variable?
+
+==> Types of variable declaration (var,let,const)
+
+13-4-
+
+==> what is console.log?
+
+==> Explain  Variable data types, Numeric, String, Boolean and (typeof) with example
+
+==>  Explain All JavaScript Keyword which could not used for variable-
+and Variable name naming convention with example
+
+-- no keyword is variable name
+-- no space or gap in variable name
+-- no quote
+-- can not start with number but other than the first letter is allowed
+-- name is case sensitive
+
+-- How to write a long variable name? . and Camel  case naming convention is best practice like (isHappy-isRich-myCurrentAddress)
+
+==>  Know the fundamentals of JS Numbers-
+-- var malta = parseInt("rtrtgfg");
+console.log(typeof malta); - Number but not a number
+
+
+==> toFixed(2) and infinity number - Explain
+
+==> Arithmetic operators explain
+
+==>  Mathematical operation shorthand explain.
+
+(+,-,*,/,%)
+
+==> x + y = z
+here, x and y = operands
+    +  = operators
+    z = result
+
+    ==> Shorthand: (+=,-=,*=,/=)
+    
+                     var price = 30;
+                    price += 10;
+                    console.log(price)
+
+
+==> Explan number + string. what happened?
+==> and (-,*,/ is normall)
+
+==> NaN - whats this?
+What does isNaN() actually do?
+
+isNaN(value)
+➡️ It tries to convert the value to a number first,
+then checks if that result is NaN (Not-a-Number).
+
+
