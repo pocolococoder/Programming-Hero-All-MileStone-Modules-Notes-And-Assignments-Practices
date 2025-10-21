@@ -1,0 +1,10 @@
+.manrope-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.standard{
+  background-image: url(../assets/bg.png);
+}

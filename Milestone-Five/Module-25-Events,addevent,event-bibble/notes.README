@@ -1,0 +1,23 @@
+==> what is event? different types of event and its usecase with example-
+
+--> onClick-- mouse click,key press,page load,scrolling,from submission,
+
+onclik e console log korte gele ('single quotation') use korte hobe
+
+==> add onclick handler directly or via js
+
+==> Differnet ways to use addEventListener on  a button
+
+==> Integrate event innertext and text update by event handlers
+
+==> create a comment box and display comment
+
+==> Explore more event type and simple github like delete confirmation button
+
+==> event bubble and stop propogating
+
+==> event delegate and benefit of event bubble
+
+==> All about addEventListener
+
+==> 

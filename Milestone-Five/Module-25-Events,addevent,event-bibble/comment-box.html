@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .comment{
+            border: 2px solid blue;
+            background-color: lightcyan;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .comments{
+            border: 2px solid red;
+            background-color: lightcyan;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Awesome Comment Box. Write what in your mind!!</h2>
+
+    <section>
+        <h2>All Comments Here!</h2>
+        <div id="comment-container">
+            <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, explicabo expedita! Reiciendis maiores magni recusandae perspiciatis, architecto libero ipsum incidunt tempora dolores commodi ipsa reprehenderit minima earum sunt impedit aut.</p>
+
+            <p class="comment">Debitis atque culpa libero adipisci cupiditate qui, iure vel modi unde deserunt nesciunt quo facere. Voluptates quibusdam doloribus dolore, aperiam sint natus repellendus incidunt unde sapiente officiis est obcaecati? Saepe?</p>
+
+            <p class="comment">Iusto perspiciatis harum asperiores corporis saepe ut quam aspernatur explicabo, obcaecati quaerat eum aliquam doloremque laborum quis eos repellat dignissimos voluptatem quia a reiciendis fugit. Voluptate aut sed reprehenderit quam.</p>
+
+        </div>
+
+        <!-- <form> -->
+            <textarea name="" id="text-input" cols="70" rows="10"></textarea>
+            <br>
+            <button id="btn-post-comment">Post</button>
+        <!-- </form> -->
+    </section>
+
+
+
+    <h1 id="hidden-info">Delete</h1>
+
+    <textarea name="" placeholder="write 'delete'" id="input-delete"></textarea>
+
+    <br>
+
+    <button id="btn-delete" disabled>Delete</button>
+
+
+
+    <script src="/js/comment-box.js"></script>
+</body>
+</html>

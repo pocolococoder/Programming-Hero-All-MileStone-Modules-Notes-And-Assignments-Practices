@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            color:rgb(169, 0, 169);
+        }
+
+        .food .foreign{
+            font-weight: 800;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bold{
+            font-weight: 100;
+        }
+
+        .big{
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tour Of Dom//</h1>
+
+    <main id="main-container">
+        <section id="old-dhaka" class="songs">
+            <h1>List of Friends</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Earum, illo?</span> Lorem ipsum dolor sit amet, <span>Sit vitae incidunt</span>consectetur adipisicing elit.  neque!</p>
+        <li>Shafayet</li>
+        <li>Sifat</li>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quod <span>harum natus quibu</span> sdam laboriosam?</p>
+        <li>Shoron</li>
+        <li>Jalali</li>
+        </section>
+
+
+        <ul>
+            <li>John Snow</li>
+            <li>Deneyris</li>
+            <li>Lord Varys</li>
+        </ul>
+
+        <ol class="foreign">
+            <li>India</li>
+            <li>SA</li>
+            <li>Qatar</li>
+            <li>Jordan</li>
+            <li>Yemen</li>
+        </ol>
+
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>potato</li>
+                <li>fish</li>
+                <li>lentils</li>
+                <li class="foreign">burger</li>
+                <li class="foreign">pizzza</li>
+                <li class="foreign">pasta</li>
+            </ul>
+        </section>
+
+        <section id="player-container">
+            <h1>Players</h1>
+            <ul id="players-list">
+                <li>messi</li>
+                <li>pelle</li>
+                <li>Ronaldo</li>
+                <li>Kaka</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+
+    <script>
+        const student = {
+            name: "Abdul Mia",
+            id: 1,
+            study : function(subject){
+                // console.log(subject)
+            }
+        }
+
+
+
+
+     const tagName =   document.getElementsByTagName("li");
+        // console.log(tagName);
+        for(const li of tagName){
+            // console.log(li.innerText);
+        }
+
+        const heading = document.getElementsByTagName("h1");
+        for(const head of heading){
+            // console.log(head.innerText)
+        }
+
+        const got = document.getElementsByTagName("ul");
+        // console.log(got);
+        for(const list of got){
+            // console.log(list.innerHTML)
+        }
+
+        const foreign = document.getElementsByClassName("foreign");
+        // console.log(foreign)
+        for(const country of foreign){
+            // console.log(country.innerText)
+        }
+
+
+        const spanElements = document.querySelectorAll("#old-dhaka p span");
+        // console.log(spanElements);
+        for(const spans of spanElements){
+            // console.log(spans.innerHTML);
+        }
+        
+        const spanElement = document.querySelector("#old-dhaka p span");
+        // console.log(spanElement.innerHTML);
+
+        const classSpans = document.querySelectorAll(".songs p span");
+
+        // console.log(classSpans);
+        for(const classSpan of classSpans){
+            // console.log(classSpan.innerHTML);
+        }
+
+
+       const foodElement = document.getElementById("food-title");
+       foodElement.innerText = "Food I Hate";
+       foodElement.style.color = "green";
+    //    foodElement.style.backgroundColor = "purple";
+       foodElement.style.borderRadius = "14px"
+       foodElement.style.padding = "14px"
+       foodElement.style.fontSize = "34px"
+       foodElement.style.margin = "4px";
+
+       foodElement.classList.add("bg-red");
+       foodElement.classList.remove("bg-red");
+       foodElement.classList.add("bold");
+       foodElement.classList.remove("bold");
+
+//       const getAtr =  foodElement.getAttribute("id");
+       
+// console.log(getAtr);
+
+// const tool = foodElement.setAttribute("title","title or tooltip by js")
+// console.log(tool);
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+</html>

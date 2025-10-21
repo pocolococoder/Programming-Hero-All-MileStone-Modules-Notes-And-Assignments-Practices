@@ -1,0 +1,23 @@
+==> What is Dom? its meaning? Why this needed? and its usecase--
+
+==> Traversing dom - getElementsByTagName, HTML Collection , innerText , innerHTML
+
+==>  Traversing dom - getElementsByClass VS getElementById, its usecase with example 
+
+==> Traversing dom - getElementByQuerySelector, querySelectorAll its useCase with example. --> css selector
+
+==> Explain nodeList VS HTML Collection-->
+
+==> Dynamic style getAttribute, setAttribute**,innerText, innerHTML
+
+==> styling dom properties, add and remove css class using js
+
+==> nodeList , htmlCollection, parentNode, childnotes, createElement
+
+==> nodelist vs html Collection
+
+==> create Html elements using js and appendchild
+
+==> some times innerHTML is not showing and some case e innerText is not working? why?
+
+==> backtick and its usecase--
